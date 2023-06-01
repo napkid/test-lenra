@@ -10,7 +10,7 @@ generator:
         adds:
           - "*.json"
         script:
-          - npm ci --omit=dev
+          - npm i --omit=dev
     from: builder-0
     adds:
       - .
@@ -25,3 +25,6 @@ generator:
       - "**"
       - "!/*.json"
       - "!/src/"
+dev:
+  devtool:
+    tag: alpha
